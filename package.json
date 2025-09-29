@@ -9,8 +9,6 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@auth/core": "^0.38.0",
-    "@auth/drizzle-adapter": "^1.8.0",
     "@emotion/react": "^11.11.4",
     "@emotion/styled": "^11.11.5",
     "@heroicons/react": "^2.2.0",
@@ -18,8 +16,6 @@
     "@react-three/drei": "^9.121.4",
     "@react-three/fiber": "^8.17.14",
     "@t3-oss/env-nextjs": "^0.13.8",
-    "@trpc/client": "^11.0.0-rc.817",
-    "@trpc/server": "^11.0.0-rc.817",
     "@types/react-icons": "^2.2.7",
     "bear-react-carousel": "^5.0.1",
     "class-variance-authority": "^0.7.0",
@@ -30,7 +26,6 @@
     "ionicons": "^7.4.0",
     "lucide-react": "^0.378.0",
     "next": "14.2.3",
-    "next-auth": "^4.24.11",
     "postgres": "^3.4.5",
     "react": "^18",
     "react-dom": "^18",
@@ -50,7 +45,6 @@
     "@types/react": "18.3.2",
     "@types/react-dom": "^18",
     "@types/three": "^0.173.0",
-    "drizzle-kit": "^0.30.5",
     "eslint": "^8",
     "eslint-config-next": "14.2.3",
     "postcss": "^8",
