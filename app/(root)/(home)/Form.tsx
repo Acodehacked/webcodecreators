@@ -1,4 +1,5 @@
 'use client'
+
 import { cn } from '@/lib/utils'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -43,15 +44,8 @@ const Form = () => {
             formData.append('mail', mail);
             formData.append('type', type);
             formData.append('message', message);
-            await fetch('https://porukaracollege.in/api/webcode/form', {
-                method: 'post',
-                body: JSON.stringify({
-                    name: name,
-                    phone: phone,
-                    mail: mail,
-                    type: type,
-                    message: message
-                }),
+            await fetch(`https://porukaracollege.in/api/webcode/form?name=${name}&phone=${phone}&mail=${mail}&type=${type}&message=${message}`, {
+                method: 'get',
             }).then((res) => res.json()).then((json) => {
                 if (json.error == null) {
                     setSuccess('Your message send Successfully');
@@ -66,7 +60,7 @@ const Form = () => {
 
     }
     return (
-        <div className='screen py-10 px-3 flex ' id='Contact'>
+        <div className='screen py-10 px-3 flex ' id='contact'>
             <div className='flex  w-full mx-auto rounded-2xl max-w-[900px] md:flex-row flex-col py-8'>
                 {/* <div className='flex flex-col items-center p-4'>
                     <Image src={'/assets/dev.gif'} width={300} height={300} alt="" />

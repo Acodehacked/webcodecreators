@@ -19,7 +19,7 @@ const HomeNavbar = () => {
                     <Image src={'/assets/webcode.png'} width={60} height={60} alt='' />
                 </div>
                 <div className="flex items-center">
-                    <Link className='flex px-4 py-2 rounded-full bg-gradient-to-t from-primary font-main to-violet-800 hover:scale-105 transition-all shining-button overflow-hidden relative text-[17px]' href={'/'}>ENQUIRE NOW</Link>
+                    <Link className='flex px-4 py-2 rounded-full bg-gradient-to-t from-primary font-main to-violet-800 hover:scale-105 transition-all shining-button overflow-hidden relative text-[17px]' href={'/#contact'}>ENQUIRE NOW</Link>
                     <div onClick={() => {
                         setmenuopen(true)
                         console.log('open')
@@ -28,13 +28,12 @@ const HomeNavbar = () => {
                     </div>
                 </div>
             </nav>
-            <div className="topbar md:flex hidden fixed z-[999] bg-[#141414] border-[#262626] border-[0.02rem] p-1 rounded-full topbar">
-                    <Link className='font-maim font-regular z-[999]' href={'/'}>HOME</Link>
+            <div className="topbar md:flex hidden fixed z-[999] bg-[#141414]/40 backdrop-blur-sm border-[#8c018c]/20 border-[0.02rem] p-1 rounded-full topbar">
+                    <Link className='font-maim font-regular z-[999]' href={'/#'}>HOME</Link>
                     <Link className='font-main' href={'/#works'}>WORKS</Link>
                     <Link className='font-main' href={'/#aboutus'}>ABOUT US</Link>
-                    <Link className='font-main' href={'/#ourteam'}>OUR TEAM</Link>
+                    {/* <Link className='font-main' href={'/#ourteam'}>OUR TEAM</Link> */}
                     <Link className='font-main' href={'/#contact'}>CONTACT</Link>
-                    <div className="absolute top-0 left-0 bg-[#1F1F1F] w-[100px] h-full rounded-full z-[998]"></div>
             </div>
             <AnimatePresence>
                 {menuopen && <motion.div

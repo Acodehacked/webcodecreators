@@ -10,7 +10,7 @@ import React, { useContext, useEffect, useRef, useState } from 'react'
 import { useInView } from 'react-intersection-observer'
 import { ParallaxProvider, ParallaxBanner } from "react-scroll-parallax";
 import OurWorks from '@/components/home/OurWorks'
-import { BiPhoneCall } from 'react-icons/bi'
+import { BiLogoWhatsapp, BiPhoneCall } from 'react-icons/bi'
 import Pricings from '@/components/home/Pricings'
 import Form from './Form'
 import { Parallel } from './pp'
@@ -58,9 +58,9 @@ const HomePage = () => {
                                 <div className='flex items-center mt-8 sm:mt-12 gap-4'>
                                     <div className="relative inline-flex items-center justify-center  group">
                                         <div className="absolute transition-all duration-200 rounded-full -inset-px bg-gradient-to-r from-cyan-500 to-purple-500 group-hover:shadow-lg group-hover:shadow-cyan-500/50"></div>
-                                        <Link href="#Contact" title="" className="relative inline-flex items-center justify-center px-8 py-3 text-base font-normal text-white bg-black border border-transparent rounded-full" > Enquire Now </Link>
+                                        <Link href="/#contact" title="" className="relative inline-flex items-center justify-center px-8 py-3 text-base font-normal text-white bg-black border border-transparent rounded-full" > Enquire Now </Link>
                                     </div>
-                                    <Link href="#OurWorks" title="" className="relative inline-flex items-center justify-center px-8 py-3 text-base font-normal text-white bg-zinc-900 border border-black rounded-full" > Our Works </Link>
+                                    <Link href="/#works" title="" className="relative inline-flex items-center justify-center px-8 py-3 text-base font-normal text-white bg-zinc-900 border border-black rounded-full" > Our Works </Link>
 
                                 </div>
                                 <div>
@@ -180,7 +180,7 @@ const HomePage = () => {
                     <p className='text-[22px] text-zinc-400'>Turn them into mindblowing designs!</p>
                     <div className='flex gap-3 mt-5'>
                         <Link className='flex px-4 py-3 rounded-full bg-gradient-to-t from-primary to-violet-800 hover:scale-105 transition-all shining-button overflow-hidden relative ' href={'/'}>Get a Quote</Link>
-                        <Link className='flex px-4 py-3 rounded-full bg-gradient-to-t from-green-500 to-green-400 hover:scale-105 transition-all shining-button overflow-hidden relative text-black gap-3 items-center' href={'/'}><BiPhoneCall /> Contact Us</Link>
+                        <Link className='flex px-4 py-3 rounded-full bg-gradient-to-t from-green-500 to-green-400 hover:scale-105 transition-all shining-button overflow-hidden relative text-black gap-3 items-center' href={'https://wa.me/919048741910'}><BiLogoWhatsapp size={30} /> Contact Us</Link>
                     </div>
                 </div>
             </div>

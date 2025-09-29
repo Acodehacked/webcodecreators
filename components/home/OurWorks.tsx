@@ -2,7 +2,7 @@
 import React, { useActionState, useEffect, useState } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
-import { cn, useWindowSize } from '@/lib/utils';
+import { cn } from '@/lib/utils';
 import Image from 'next/image';
 const OurWorks = () => {
     const [hidden, sethidden] = useState(true);
@@ -94,12 +94,12 @@ const OurWorks = () => {
             desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, vel."
         },
     ];
-    const windowsize = useWindowSize();
-    useEffect(() => {
-        console.log(windowsize)
-    }, [windowsize])
+    // const windowsize = useWindowSize();
+    // useEffect(() => {
+    //     console.log(windowsize)
+    // }, [windowsize])
     return (
-        <div id='OurWorks' className={'w-full relative screen min-h-[50vh] bg-zinc-800/10 mt-10 pt-8 px-6 transition-all'}>
+        <div id='works' className={'w-full relative screen min-h-[50vh] bg-zinc-800/10 mt-10 pt-8 px-6 transition-all'}>
             <div className='flex flex-col items-start px-3'>
                 <span className='bg-white/40 text-[16px] px-3 py-1 rounded-sm mt-[80px]'>Projects</span>
                 <h3 className='md:text-[44px] font-extrabold title text-[35px]'>Our Recent Works</h3>
@@ -135,7 +135,7 @@ const OurWorks = () => {
                 }} className='bg-black/80 rounded-full mb-8 px-6 py-2 border-[0.01rem] border-zinc-400 hover:translate-y-[-5px] transition-all hover:scale-105'>Show All</button>
             </div>
             <div className='sm:hidden block'>
-                <Swiper
+                {/* <Swiper
                     className='w-full min-h-[400px]'
                     parallax={true}
                     centeredSlides={true}
@@ -167,7 +167,7 @@ const OurWorks = () => {
                             </div>
                         </SwiperSlide>
                     })}
-                </Swiper>
+                </Swiper> */}
             </div>
 
         </div>
